@@ -1,0 +1,15 @@
+CREATE table exStudent (
+	sno number(5) PRIMARY KEY,
+	sname varchar2(20),
+	point number(4)
+);
+insert into EXSTUDENT values(20901, '김기태', 0);
+insert into EXSTUDENT values(20902, '김상훈', 0);
+insert into EXSTUDENT values(20903, '김용민', 0);
+insert into EXSTUDENT values(20904, '김종민', 0);
+
+update EXSTUDENT set point = point + 1 where sname='김종민';
+
+SELECT * from EXSTUDENT;
+drop table EXSTUDENT;
+SELECT * from tbl_point_std;
